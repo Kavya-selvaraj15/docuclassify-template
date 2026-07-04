@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+db.sqlite3
+media/uploads/*
+!media/uploads/.gitkeep
+venv/
+.venv/
+staticfiles/
+*.log
+.DS_Store
+ml_models/*.pkl
