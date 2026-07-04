@@ -16,9 +16,12 @@
           class="btn btn-sm btn-outline-light me-2"
           >Upload</a
         >
-        <a href="{% url 'logout' %}" class="btn btn-sm btn-outline-light"
-          >Logout</a
-        >
+        <form method="post" action="{% url 'logout' %}" style="display: inline">
+          {% csrf_token %}
+          <button type="submit" class="btn btn-sm btn-outline-light">
+            Logout
+          </button>
+        </form>
       </div>
     </nav>
     <div class="container mt-4">
